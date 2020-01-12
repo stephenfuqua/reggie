@@ -16,7 +16,7 @@
                         cal:Message.Attach="[Event Click] = [OpenReggieWebsite]" />
                 <LineBreak/><LineBreak/>
                 <TextBlock Style="{StaticResource TextBlockBeforeLinkButton}">Licensed Under the</TextBlock>
-                <Button  Name="OpenLicense" Content="MS-PL" Style="{StaticResource LinkButton}"
+                <Button  Name="OpenLicense" Content="MIT License" Style="{StaticResource LinkButton}"
                         cal:Message.Attach="[Event Click] = [OpenLicense]" />
                 .
                 <LineBreak/><LineBreak/>

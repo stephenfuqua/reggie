@@ -23,8 +23,8 @@ namespace Reggie.UI.ViewModels
         private readonly IAssemblyAdapter m_assemblyAdapter;
         private readonly IFileAdapter m_fileAdapter;
 
-        private const string c_reggieWebsite = "http://reggie.codeplex.com/";
-        private const string c_msplWebsite = "http://www.microsoft.com/en-us/openness/licenses.aspx#MPL";
+        private const string c_reggieWebsite = "https://github.com/stephenfuqua/reggie";
+        private const string c_mitLicense = "https://github.com/stephenfuqua/reggie/LICENSE";
         private const string c_safnetWebsite = "http://www.safnet.com";
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace Reggie.UI.ViewModels
         /// </summary>
         public void OpenLicense()
         {
-            m_fileAdapter.OpenInDefaultApplication(c_msplWebsite);
+            m_fileAdapter.OpenInDefaultApplication(c_mitLicense);
         }
 
         /// <summary>

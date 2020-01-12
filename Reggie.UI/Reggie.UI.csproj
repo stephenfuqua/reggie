@@ -117,9 +117,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Ms-PL.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\Reggie.png" />
   </ItemGroup>
   <ItemGroup>
