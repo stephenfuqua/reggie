@@ -1,0 +1,32 @@
+﻿<Window x:Class="Reggie.UI.Views.AboutView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:cal="http://www.caliburnproject.org"
+        Title="About" Height="300" Width="300">
+    <Grid Style="{StaticResource DefaultGrid}" >
+        <Image Name="ReggieLogo" Source="/Reggie.UI;component/Images/Reggie.png" VerticalAlignment="Top" HorizontalAlignment="Stretch" />
+        <ScrollViewer Margin="0,80,0,0" Height="150" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+            <TextBlock  TextWrapping="Wrap" Padding="5">
+                Reggie's goal is to be a simple developer tool for writing and testing Regular Expressions.
+                <LineBreak/><LineBreak/>
+                Version <TextBlock Name="Version" Text="{Binding Version}" ></TextBlock>
+                <LineBreak/>
+                <Button Name="OpenReggieWebsite" Content="Reggie on the Web" Style="{StaticResource LinkButton}"
+                        cal:Message.Attach="[Event Click] = [OpenReggieWebsite]" />
+                <LineBreak/><LineBreak/>
+                <TextBlock Style="{StaticResource TextBlockBeforeLinkButton}">Licensed Under the</TextBlock>
+                <Button  Name="OpenLicense" Content="MS-PL" Style="{StaticResource LinkButton}"
+                        cal:Message.Attach="[Event Click] = [OpenLicense]" />
+                .
+                <LineBreak/><LineBreak/>
+                Written by:
+                <LineBreak/>
+               <TextBlock Style="{StaticResource TextBlockBeforeLinkButton}" Padding="5,0,0,0">&#8226; Stephen A. Fuqua</TextBlock>
+                <Button Name="OpenSafnet" Content="www.safnet.com" Style="{StaticResource LinkButton}"
+                        cal:Message.Attach="[Event Click] = [OpenSafnet]" />
+            </TextBlock>
+        </ScrollViewer>
+        <Button Name="CloseWindow" Content="_Close" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>

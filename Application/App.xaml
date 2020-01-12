@@ -1,0 +1,17 @@
+﻿<Application x:Class="Reggie.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Reggie"
+             xmlns:vm="clr-namespace:Reggie.UI.ViewModels;assembly=Reggie.UI"
+             xmlns:views="clr-namespace:Reggie.UI.Views;assembly=Reggie.UI">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+                <ResourceDictionary>
+                    <local:AppBootstrapper x:Key="bootstrapper" />
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
