@@ -1,6 +1,6 @@
 # REGGiE: Regular Expression Tester
 
-![Reggie logo](Reggie.UI/images/reggie.png)
+![Reggie logo](Reggie.UI/Images/Reggie.png)
 
 Demonstration project for testing regular expressions, originally created ... sometime in the 2000s. Retrieved from CodePlex archived and moved to GitHub January, 2020.
 
