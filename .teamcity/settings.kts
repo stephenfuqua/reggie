@@ -32,4 +32,10 @@ project {
 
 object Asdfasdf : Project({
     name = "asdfasdf"
+
+    buildType(Asdfasdf_Asdfasdf)
+})
+
+object Asdfasdf_Asdfasdf : BuildType({
+    name = "asdfasdf"
 })
