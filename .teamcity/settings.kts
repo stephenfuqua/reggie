@@ -38,4 +38,8 @@ object Asdfasdf : Project({
 
 object Asdfasdf_Asdfasdf : BuildType({
     name = "asdfasdf"
+
+    vcs {
+        root(DslContext.settingsRoot)
+    }
 })
