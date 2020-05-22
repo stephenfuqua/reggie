@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.nuGetInstaller
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -41,5 +42,12 @@ object Asdfasdf_Asdfasdf : BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
+    }
+
+    steps {
+        nuGetInstaller {
+            toolPath = "%teamcity.tool.NuGet.CommandLine.DEFAULT%"
+            projects = "Reggie.sln"
+        }
     }
 })
